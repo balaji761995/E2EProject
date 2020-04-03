@@ -44,7 +44,7 @@ public class DriverUtility {
 		}
 		else if(browser.equals("IE"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\balaj\\Work\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\balaj\\Work\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
