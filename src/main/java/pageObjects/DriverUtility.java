@@ -32,8 +32,8 @@ public class DriverUtility {
 		prop = new Properties();
 		prop.load(fis);
 
-		String browser = prop.getProperty("browser");
-		
+		//String browser = prop.getProperty("browser");
+		String browser = System.getProperty("browser");
 		if(browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\balaj\\Work\\chromedriver_win32\\chromedriver.exe");
