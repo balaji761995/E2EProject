@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.apache.commons.io.FileUtils;
 
@@ -28,23 +29,28 @@ public class DriverUtility {
 	
 	public static WebDriver initializeBrowser() throws IOException
 	{
-		fis = new FileInputStream("C:\\Users\\balaj\\cucumber.project\\src\\main\\java\\resources\\data.properties");
+		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop = new Properties();
 		prop.load(fis);
 
 		//String browser = prop.getProperty("browser");
 		String browser = System.getProperty("browser");
-		if(browser.equals("chrome"))
+		if(browser.contains("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\balaj\\Work\\chromedriver_win32\\chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\chromedriver.exe");
+			ChromeOptions option = new ChromeOptions();
+			if(browser.contains("headless"))
+			{
+				option.addArguments("headless");
+			}
+			driver = new ChromeDriver(option);
 			logger.info("Chrome driver successfully initialized");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 		}
 		else if(browser.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\balaj\\Work\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
