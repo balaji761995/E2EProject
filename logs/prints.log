@@ -1,2 +1,5 @@
-18:09:15.222 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
-18:09:59.834 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:39:14.210 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:39:37.885 [main] INFO  pageObjects.DriverUtility - Browser closed
+12:42:41.848 [TestNG-test=Test-2] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:42:42.289 [TestNG-test=Test-1] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:42:42.798 [TestNG-test=Test-3] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized

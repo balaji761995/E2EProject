@@ -18,7 +18,7 @@ public class loginWithMultipleDataTest extends DriverUtility {
 	
 	
 	@Test(dataProvider="userData")
-	public static void loginPageTest(String user, String pass) throws IOException
+	public static void multipleLoginTest(String user, String pass) throws IOException
 	{
 		driver = initializeBrowser();
 		driver.get("http://www.rediff.com/");

@@ -1,0 +1,7 @@
+12:33:13.385 [main] INFO  pageObjects.DriverUtility - Login button clicked
+12:33:14.420 [main] INFO  pageObjects.DriverUtility - Browser closed
+12:35:02.629 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:35:48.843 [main] INFO  pageObjects.DriverUtility - Browser closed
+12:35:55.343 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:37:45.846 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+12:39:07.485 [main] INFO  pageObjects.DriverUtility - Browser closed

@@ -20,7 +20,7 @@ public class RediffNavbarTest extends DriverUtility {
 	
 	
 	@Test
-	public static void loginPageTest() throws IOException
+	public static void navbarTest() throws IOException
 	{
 		driver = initializeBrowser();
 		driver.get("http://www.rediff.com/");

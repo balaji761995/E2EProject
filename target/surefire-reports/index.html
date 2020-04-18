@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.RediffNavbarTest" hash-for-method="loginPageTest">loginPageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.RediffNavbarTest" hash-for-method="navbarTest">navbarTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,17 +116,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.loginWithMultipleDataTest" hash-for-method="loginPageTest(user2, pass2)">loginPageTest(user2, pass2)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.loginTest" hash-for-method="loginPageTest">loginPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.loginWithMultipleDataTest" hash-for-method="loginPageTest(user1, pass1)">loginPageTest(user1, pass1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.loginWithMultipleDataTest" hash-for-method="multipleLoginTest(user2, pass2)">multipleLoginTest(user2, pass2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rediffTest.loginWithMultipleDataTest" hash-for-method="multipleLoginTest(user1, pass1)">multipleLoginTest(user1, pass1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -149,11 +149,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPageTest">
-                  </a> <!-- loginPageTest -->
-                  <span class="method-name">loginPageTest</span>
+                  <a name="navbarTest">
+                  </a> <!-- navbarTest -->
+                  <span class="method-name">navbarTest</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at rediffTest.RediffNavbarTest.loginPageTest(RediffNavbarTest.java:28)
+	at rediffTest.RediffNavbarTest.navbarTest(RediffNavbarTest.java:28)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -169,17 +169,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPageTest(user2, pass2)">
-                  </a> <!-- loginPageTest(user2, pass2) -->
-                  <span class="method-name">loginPageTest</span>
+                  <a name="multipleLoginTest(user2, pass2)">
+                  </a> <!-- multipleLoginTest(user2, pass2) -->
+                  <span class="method-name">multipleLoginTest</span>
                   <span class="parameters">(user2, pass2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPageTest(user1, pass1)">
-                  </a> <!-- loginPageTest(user1, pass1) -->
-                  <span class="method-name">loginPageTest</span>
+                  <a name="multipleLoginTest(user1, pass1)">
+                  </a> <!-- multipleLoginTest(user1, pass1) -->
+                  <span class="method-name">multipleLoginTest</span>
                   <span class="parameters">(user1, pass1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -212,14 +212,12 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;rediffTest.listeners&quot;/&gt;
-    &lt;listener class-name=&quot;rediffTest.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;rediffTest.loginTest&quot;/&gt;
-      &lt;class name=&quot;cucumber.framework.AppTest&quot;/&gt;
-      &lt;class name=&quot;rediffTest.RediffNavbarTest&quot;/&gt;
       &lt;class name=&quot;rediffTest.loginWithMultipleDataTest&quot;/&gt;
+      &lt;class name=&quot;rediffTest.RediffNavbarTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -233,7 +231,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,24 +261,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPageTest')
 data.setCell(0, 2, 'rediffTest.loginTest')
-data.setCell(0, 3, 174435);
+data.setCell(0, 3, 37952);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPageTest')
+data.setCell(1, 1, 'multipleLoginTest')
 data.setCell(1, 2, 'rediffTest.loginWithMultipleDataTest')
-data.setCell(1, 3, 163373);
+data.setCell(1, 3, 36920);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginPageTest')
+data.setCell(2, 1, 'multipleLoginTest')
 data.setCell(2, 2, 'rediffTest.loginWithMultipleDataTest')
-data.setCell(2, 3, 104648);
+data.setCell(2, 3, 30623);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginPageTest')
+data.setCell(3, 1, 'navbarTest')
 data.setCell(3, 2, 'rediffTest.RediffNavbarTest')
-data.setCell(3, 3, 59790);
+data.setCell(3, 3, 26476);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -312,10 +310,23 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">174446 ms</span>
+                <span class="method-start">37993 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rediffTest.loginWithMultipleDataTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">multipleLoginTest(user1, pass1)</span>
+                <span class="method-start">43088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">multipleLoginTest(user2, pass2)</span>
+                <span class="method-start">73714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">110635 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -323,27 +334,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginPageTest</span>
-                <span class="method-start">176779 ms</span>
+                <span class="method-name">navbarTest</span>
+                <span class="method-start">111853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">237564 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">rediffTest.loginWithMultipleDataTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginPageTest(user1, pass1)</span>
-                <span class="method-start">238298 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginPageTest(user2, pass2)</span>
-                <span class="method-start">401676 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">506325 ms</span>
+                <span class="method-start">138372 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

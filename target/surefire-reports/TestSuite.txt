@@ -1,18 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 513.481 s <<< FAILURE! - in TestSuite
-rediffTest.loginTest.closeBrowser  Time elapsed: 176.775 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7L6771B', ip: '192.168.43.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\balaj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 185319577b92338e6e08810aa318c1e2
-	at rediffTest.loginTest.closeBrowser(loginTest.java:50)
-
-rediffTest.RediffNavbarTest.loginPageTest  Time elapsed: 60.783 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 146.123 s <<< FAILURE! - in TestSuite
+rediffTest.RediffNavbarTest.navbarTest  Time elapsed: 26.505 s  <<< FAILURE!
 java.lang.AssertionError: expected [false] but found [true]
-	at rediffTest.RediffNavbarTest.loginPageTest(RediffNavbarTest.java:28)
+	at rediffTest.RediffNavbarTest.navbarTest(RediffNavbarTest.java:28)
 

@@ -34,7 +34,8 @@ public class DriverUtility {
 		prop.load(fis);
 
 		//String browser = prop.getProperty("browser");
-		String browser = System.getProperty("browser");
+		//String browser = System.getProperty("browser");
+		String browser = "chrome";
 		if(browser.contains("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\chromedriver.exe");
@@ -59,12 +60,15 @@ public class DriverUtility {
 		return driver;
 	}
 	
-	public void takeScreenshots(String result) throws IOException
-	{
-		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\balaj\\Work\\"+result+"screenshot.png"));
-	}
-	
+	public String failureScreenShot(WebDriver driver,String testName) throws IOException
+    {
+    	TakesScreenshot ts = (TakesScreenshot)driver;
+    	File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+    	String dest = System.getProperty("user.dir")+"//reports//"+testName+".png";
+    	File destFile = new File(dest);
+    	FileUtils.copyFile(sourceFile, destFile);
+    	return dest;
+    }
 	
 }
 

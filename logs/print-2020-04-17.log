@@ -1,0 +1,6 @@
+19:48:10.675 [main] INFO  pageObjects.DriverUtility - Login link clicked successfully
+19:48:16.310 [main] INFO  pageObjects.DriverUtility - User Name and Password entered successfully
+19:48:18.441 [main] INFO  pageObjects.DriverUtility - Login button clicked
+19:48:23.562 [main] INFO  pageObjects.DriverUtility - Browser closed
+19:48:30.961 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized
+19:49:04.597 [main] INFO  pageObjects.DriverUtility - Chrome driver successfully initialized

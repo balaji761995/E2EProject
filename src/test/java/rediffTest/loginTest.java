@@ -14,6 +14,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import pageObjects.DriverUtility;
 import pageObjects.HomePageObjects;
 import pageObjects.LoginPageObjects;
@@ -21,12 +25,13 @@ import pageObjects.LoginPageObjects;
 
 public class loginTest extends DriverUtility {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	
 	private static final Logger logger = LogManager.getLogger(DriverUtility.class.getName());
 	
+ 	
 	@Test
-	public static void loginPageTest() throws IOException
+	public void loginPageTest() throws IOException
 	{
 		driver = initializeBrowser();
 		driver.get("http://www.rediff.com/");
@@ -38,11 +43,10 @@ public class loginTest extends DriverUtility {
 		loginPage.enterPassword().sendKeys(prop.getProperty("password"));
 		logger.info("User Name and Password entered successfully");
 		loginPage.signInButton().click();
+		//failureScreenShot(driver,"test1");
 		logger.info("Login button clicked");
-		Assert.assertEquals(loginPage.loginErrorMsg().getText(), "Temporary error occured[#5001], please try again.");
-		driver.close();
-		logger.info("Browser closed");
-	}
+		//Assert.assertEquals(loginPage.loginErrorMsg().getText(),"Temporary error occured[#5001], please try again.");
+}
 	
 	@AfterClass
 	public void closeBrowser()
